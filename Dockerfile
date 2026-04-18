@@ -24,7 +24,7 @@ CMD [ \
     "--model", "/models/model.gguf", \
     "--port", "8080", \
     "--host", "0.0.0.0", \
-    "--ctx-size", "8192", \
+    "--ctx-size", "32768", \
     "--n-gpu-layers", "999", \
     "--temp", "0.7", \
     "--top-k", "40", \
