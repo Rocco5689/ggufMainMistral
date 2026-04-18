@@ -6,3 +6,6 @@ https://huggingface.co/bartowski/cognitivecomputations_Dolphin3.0-R1-Mistral-24B
 
 # Docker Hub Repository
 - cavallo5689/llama-gguf-server:v4
+
+# Volume mount path
+- /models
