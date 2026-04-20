@@ -18,17 +18,17 @@ EXPOSE 8080
 # Use our custom script as entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
 
-# Default arguments passed to llama-server
-# You can override any of these at runtime via docker run ... or Runpod environment
+# Updated CMD with creative settings for erotic roleplay
 CMD [ \
     "--model", "/models/model.gguf", \
     "--port", "8080", \
     "--host", "0.0.0.0", \
     "--ctx-size", "32768", \
     "--n-gpu-layers", "999", \
-    "--temp", "0.8", \
-    "--top-k", "40", \
+    "--temp", "1.15", \
+    "--top-k", "60", \
     "--top-p", "0.95", \
-    "--min-p", "0.05", \
-    "--repeat-penalty", "1.1" \
+    "--min-p", "0.02", \
+    "--repeat-penalty", "1.08", \
+    "--verbose" \
 ]
