@@ -8,6 +8,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
 # Create models directory
 RUN mkdir -p /models
 
+# Active GGUF model (Dolphin3.0-R1-Mistral-24B Q5_K_S)
+ENV MODEL_URL=https://huggingface.co/bartowski/cognitivecomputations_Dolphin3.0-R1-Mistral-24B-GGUF/resolve/main/cognitivecomputations_Dolphin3.0-R1-Mistral-24B-Q5_K_S.gguf
+
 # Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
